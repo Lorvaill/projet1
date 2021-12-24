@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    list-style: none;
 }
 
 body{
@@ -275,4 +276,284 @@ div :target{
 
 div:not(:target){
     display: none;
+}
+
+.skill{
+    text-transform: uppercase;
+    width: 40%;
+    margin: 5% auto;
+    color: #fff;
+    padding: 5%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    margin: 5%;
+}
+
+.skill #list{
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.bar{
+    background: #353b48;
+    display: block;
+    height: 60%;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition:  all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.bar #span1{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html{
+    width: 70%;
+    animation: html 3s;
+}
+
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+
+.php{
+    width: 30%;
+    animation: php 3s;
+}
+
+.java{
+    width: 5%;
+    animation: java 3s;
+}
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes php{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes java{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 5%;
+    }
+}
+
+button{
+    border-radius: 20px;
+    margin: 4%;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover,
+button.active
+{
+    background-color: transparent;
+    color: #fff;
+}
+
+#cv:link{
+    text-decoration: none;
+    color: unset;
+}
+
+#btn-cv{
+    margin-left: 30%;
+}
+
+
+/*formulaire*/
+
+.contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+}
+
+.contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #fff;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.contact-form-text:focus{
+    box-shadow: 0 0 10px 4px #fff;
+}
+
+textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+}
+
+.contact-form-btn{
+    float: right;
+    background: #fff;
+    color: #2b1055;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 00.5s;
+    border: 2px solid #fff;
+}
+
+.contact-form-btn:hover{
+    background: transparent;
+    border-radius: 30px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Loading screen project */
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #3fbc8a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lettre{
+    color: #fff;
+    font-size: 80px;
+    letter-spacing: 15px;
+    margin-bottom: 150px;
+    animation: flash 1.2s linear infinite;
+}
+
+@keyframes flash{
+    0% {
+        color: #fff;
+        text-shadow: 0 0 7px #fff;
+    }
+    90% {
+        color: aquamarine;
+        text-shadow: none;
+    }
+    100% {
+        color: #fff;
+        text-shadow: 0 0 7px #fff;
+    }
+}
+
+.lettre:nth-child(1) {
+    animation-delay: 0.1s; 
+}
+
+.lettre:nth-child(2) {
+    animation-delay: 0.2s; 
+}
+
+.lettre:nth-child(3) {
+    animation-delay: 0.3s; 
+}
+
+.lettre:nth-child(4) {
+    animation-delay: 0.4s; 
+}
+
+.lettre:nth-child(5) {
+    animation-delay: 0.5s; 
+}
+
+.lettre:nth-child(6) {
+    animation-delay: 0.6s; 
+}
+
+.lettre:nth-child(7) {
+    animation-delay: 0.7s; 
+}
+
+.lettre:nth-child(8) {
+    animation-delay: 0.8s; 
+}
+
+.lettre:nth-child(9) {
+    animation-delay: 0.9s; 
+}
+
+.lettre:nth-child(10) {
+    animation-delay: 0.10s; 
+}
+
+.fondu-out{
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
 }

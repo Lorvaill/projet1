@@ -3,7 +3,7 @@ $content=file_get_contents("../data/menup.yaml");
 $data=yaml_parse($content);
 
 echo '<header>';
-echo '<a href="#" class="logo">logo</a>';
+echo '<a href="#" class="logo">monsite</a>';
 echo '<ul>';
 echo '<li><a href="#sec" class="active">'.$data["accueil"].'</a></li>';
 echo '<li><a href="#sec1">'.$data["apropos"].'</a></li>';

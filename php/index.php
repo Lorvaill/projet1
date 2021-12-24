@@ -5,23 +5,39 @@
         <title>Testmenu</title>
         <link rel="stylesheet" type="text/css" href="../css/forme.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script src="https://www.google.com/recaptcha/api.js"></script>
     </head>
     <body>
+
+    <div class="loader">
+        <span class="lettre">C</span>
+        <span class="lettre">H</span>
+        <span class="lettre">A</span>
+        <span class="lettre">R</span>
+        <span class="lettre">G</span>
+        <span class="lettre">E</span>
+        <span class="lettre">M</span>
+        <span class="lettre">E</span>
+        <span class="lettre">N</span>
+        <span class="lettre">T</span>
+    </div>
+
+       <?php include("loading.php"); ?>
        <?php include("menup.php"); ?>
        <?php include("accueil.php"); ?>
        <?php include("apropos.php"); ?>
+       <?php include("competences.php"); ?>
+       <?php include("experiences.php"); ?>
+       <?php include("formations.php"); ?>
+       <?php include("contact.php"); ?>
+       <?php include("message.php"); ?>
+       
 
-
-
-
-
-
-
-
-
-
-
-
+       <script>
+   function onSubmit(token) {
+     document.getElementById("demo-form").submit();
+   }
+ </script>
 
         <!--<script>
             let stars = document.getElementById('stars');
